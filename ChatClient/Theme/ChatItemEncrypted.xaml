@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="ListViewItem" x:Key="ChatItemEncrypted">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding Username}" 
+                                   Foreground="#009900"
+                                   FontWeight="SemiBold"
+                                   VerticalAlignment="Center"
+                                   Margin="0,0,-5,0"/>
+
+                            <Label Content="{Binding Time}" 
+                                   Foreground="gray"
+                                   FontWeight="SemiBold"
+                                   FontSize="10"
+                                   VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <Label Content="{Binding MessageEncrypted}" 
+                                   Foreground="White"
+                                   FontWeight="SemiBold"
+                                   VerticalAlignment="Center"
+                                   Margin="0,-5,0,0"/>
+
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
